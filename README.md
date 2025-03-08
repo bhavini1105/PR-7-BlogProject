@@ -39,6 +39,9 @@ node app.js
 4️⃣ ** Open in Browser**
 Visit http://localhost:3000
 
+** Live Link ** 
+https://pr-7-blogproject.onrender.com
+
 🔑 Default Admin Login :
 
     Username: admin
