@@ -6,7 +6,6 @@ const fs = require('fs');
 module.exports.indexPage = async(req, res) => {
     try {
         let blogs = await Blog.find();
-        console.log(blogs); 
         return res.render('index',{blogs});
     } catch (error) {
         console.log(error.message);
@@ -17,7 +16,6 @@ module.exports.indexPage = async(req, res) => {
 module.exports.blogPage = async (req, res) => {
     try {
         let blogs = await Blog.find();
-        console.log(blogs);
         return res.render('pages/blog', { blogs });
     } catch (error) {
         console.error(error);

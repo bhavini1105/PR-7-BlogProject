@@ -14,8 +14,10 @@ app.use(bodyParse.urlencoded({extended : true}));
 app.use("/uploads",express.static(__dirname + "/uploads"));
 app.use(cookieParser());
 
+
 app.use(blogRedirect);
 app.use('/',require('./routers'))
+
 
 app.listen(port , (err)=>{
     db();
